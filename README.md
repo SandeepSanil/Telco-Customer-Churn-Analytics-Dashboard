@@ -75,14 +75,6 @@ Revenue at Risk % = DIVIDE ( [Monthly Revenue at Risk], [Monthly Revenue] )
 Avg Monthly Charge = AVERAGE ( Telco[MonthlyCharges] )
 Avg Tenure (Months) = AVERAGE ( Telco[tenure] )
 Avg Lifetime Value = AVERAGE ( Telco[TotalCharges] )
-Churn Rate Color =
-SWITCH (
-    TRUE (),
-    [Churn Rate] >= 0.35, "#D64545",
-    [Churn Rate] >= 0.20, "#F2A93B",
-    "#2E9E6B"
-)
-```
 
 `Churn Rate Color` drives conditional formatting so bars turn red, amber or green by risk level.
 
